@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix Bangladesh - Watch TV Shows Online, Movies Online</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="logo">NETFLIX</div>
+      <div class="actions">
+        <select aria-label="Choose language" class="lang" id="language-selector">
+          <option value="en">English</option>
+          <option value="bn">বাংলা</option>
+        </select>
+        <button class="btn ghost">Sign In</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <p class="eyebrow">Available across Bangladesh</p>
+          <h1>Unlimited movies, TV shows and more</h1>
+          <p class="lead">Starts at ৳299 per month. Watch anywhere. Cancel anytime. Ready to watch? Enter your email to create or restart your membership.</p>
+          <form class="cta" id="cta-form">
+            <label class="sr-only" for="email">Email address</label>
+            <input id="email" name="email" type="email" placeholder="Email address" required />
+            <button type="submit" class="btn primary">Get Started</button>
+          </form>
+          <p class="subcopy" id="cta-message" role="status" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <section class="grid features">
+        <article class="card">
+          <div class="card__body">
+            <h2>Enjoy on your TV</h2>
+            <p>Watch on Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, and more. Available in Dhaka, Chittagong, and all over Bangladesh.</p>
+          </div>
+          <div class="card__media tv"></div>
+        </article>
+        <article class="card">
+          <div class="card__body">
+            <h2>Download your shows</h2>
+            <p>Save your favorites easily and always have something to watch, even offline. Perfect for commuting in Bangladesh.</p>
+          </div>
+          <div class="card__media mobile"></div>
+        </article>
+        <article class="card">
+          <div class="card__body">
+            <h2>Watch everywhere</h2>
+            <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV. Mobile plans available for Bangladesh.</p>
+          </div>
+          <div class="card__media laptop"></div>
+        </article>
+        <article class="card">
+          <div class="card__body">
+            <h2>Create profiles for kids</h2>
+            <p>Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
+          </div>
+          <div class="card__media kids"></div>
+        </article>
+      </section>
+
+      <section class="section pricing">
+        <h2>Choose the plan that's right for you in Bangladesh</h2>
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <div class="plan-badge mobile">Mobile</div>
+            <div class="plan-price">৳299<span>/month</span></div>
+            <ul class="plan-features">
+              <li>✓ Unlimited movies & TV shows</li>
+              <li>✓ Watch on phone & tablet</li>
+              <li>✓ Mobile-only plan</li>
+              <li>✓ 480p video quality</li>
+            </ul>
+            <button class="btn primary">Select Plan</button>
+          </div>
+          <div class="pricing-card">
+            <div class="plan-badge basic">Basic</div>
+            <div class="plan-price">৳699<span>/month</span></div>
+            <ul class="plan-features">
+              <li>✓ Unlimited movies & TV shows</li>
+              <li>✓ Watch on any device</li>
+              <li>✓ 1 screen at a time</li>
+              <li>✓ 720p HD quality</li>
+            </ul>
+            <button class="btn primary">Select Plan</button>
+          </div>
+          <div class="pricing-card featured">
+            <div class="plan-badge standard">Standard</div>
+            <div class="plan-price">৳1199<span>/month</span></div>
+            <ul class="plan-features">
+              <li>✓ Unlimited movies & TV shows</li>
+              <li>✓ Watch on any device</li>
+              <li>✓ 2 screens at a time</li>
+              <li>✓ 1080p Full HD quality</li>
+            </ul>
+            <button class="btn primary">Select Plan</button>
+          </div>
+          <div class="pricing-card">
+            <div class="plan-badge premium">Premium</div>
+            <div class="plan-price">৳1499<span>/month</span></div>
+            <ul class="plan-features">
+              <li>✓ Unlimited movies & TV shows</li>
+              <li>✓ Watch on any device</li>
+              <li>✓ 4 screens at a time</li>
+              <li>✓ 4K Ultra HD quality</li>
+            </ul>
+            <button class="btn primary">Select Plan</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section trending">
+        <div class="section__header">
+          <h2>Trending in Bangladesh</h2>
+          <div class="pill-group">
+            <button class="pill pill--active" aria-pressed="true">All</button>
+            <button class="pill" aria-pressed="false">Movies</button>
+            <button class="pill" aria-pressed="false">TV Shows</button>
+          </div>
+        </div>
+        <div class="carousel">
+          <div class="tile" aria-label="Zero Day">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTumlO1fuf1bTTJ34IgrwUtQSwyfJc-RlTXJIzi6lNVOfkPMK_d" alt="zero day poster" />
+            <span class="rank">1</span>
+            <div class="tile__content">Zero Day</div>
+          </div>
+          <div class="tile" aria-label="Arcane">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeFj8l6e3Y7q7R8K9L0M1N2O3P4Q5R6S7T8U9V0W1X2Y3Z" alt="arcane poster" />
+            <span class="rank">2</span>
+            <div class="tile__content">Arcane</div>
+          </div>
+          <div class="tile" aria-label="Dune">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz_EeF7G8H9I0J1K2L3M4N5O6P7Q8R9S0T1U2V3W4X5Y6Z" alt="dune poster" />
+            <span class="rank">3</span>
+            <div class="tile__content">Dune</div>
+          </div>
+          <div class="tile" aria-label="Wednesday">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1_FgG2H3I4J5K6L7M8N9O0P1Q2R3S4T5U6V7W8X9Y0Z1" alt="wednesday poster" />
+            <span class="rank">4</span>
+            <div class="tile__content">Wednesday</div>
+          </div>
+          <div class="tile" aria-label="Stranger Things">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9_XyZ1A2B3C4D5E6F7G8H9I0J1K2L3M4N5O6P7Q8R9S0T" alt="stranger things poster" />
+            <span class="rank">5</span>
+            <div class="tile__content">Stranger Things</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="accordion" id="faq-list">
+          <button class="accordion__item" aria-expanded="false">
+            <span>What is Netflix?</span>
+            <span class="chevron">+</span>
+            <div class="accordion__panel">
+              <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.</p>
+            </div>
+          </button>
+          <button class="accordion__item" aria-expanded="false">
+            <span>How much does Netflix cost?</span>
+            <span class="chevron">+</span>
+            <div class="accordion__panel">
+              <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans in Bangladesh start from ৳299/month for Mobile, ৳699/month for Basic, ৳1199/month for Standard, and ৳1499/month for Premium.</p>
+            </div>
+          </button>
+          <button class="accordion__item" aria-expanded="false">
+            <span>Where can I watch?</span>
+            <span class="chevron">+</span>
+            <div class="accordion__panel">
+              <p>Watch anywhere, anytime. Sign in to Netflix on the web from your personal computer or on any internet-connected device that offers the Netflix app.</p>
+            </div>
+          </button>
+          <button class="accordion__item" aria-expanded="false">
+            <span>How do I cancel?</span>
+            <span class="chevron">+</span>
+            <div class="accordion__panel">
+              <p>Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks.</p>
+            </div>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Questions?Contact us</p>
+      <div class="footer__links">
+        <a href="#">FAQ</a>
+        <a href="#">Help Center</a>
+        <a href="#">Account</a>
+        <a href="#">Media Center</a>
+        <a href="#">Investor Relations</a>
+        <a href="#">Jobs</a>
+        <a href="#">Ways to Watch</a>
+        <a href="#">Terms of Use</a>
+      </div>
+      <div class="footer__lang">
+        <select aria-label="Choose language" class="lang">
+          <option>English</option>
+          <option>বাংলা</option>
+        </select>
+      </div>
+      <p class="footer__meta">Netflix Bangladesh - Educational Clone Demo</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
